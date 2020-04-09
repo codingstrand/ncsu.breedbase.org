@@ -1,0 +1,56 @@
+format-version: 1.2
+default-namespace: ncsu_ontology
+ontology: ncsu_ontology
+
+[Term]
+id: NO:0000001
+name: Agronomical Traits
+is_a: NO:0000009 ! NCSU_ontology
+
+[Term]
+id: NO:0000002
+name: Dry biomass
+def: "weight of dried biomass harvested from a whole (or part of) a plot" []
+is_a: NO:0000001 ! Agronomical Traits
+relationship: variable_of NO:0000001 ! Agronomical Traits
+
+[Term]
+id: NO:0000003
+name: Emergence
+def: "% of stand present, recorded 1 and 2 months after planting" []
+is_a: NO:0000001 ! Agronomical Traits
+
+[Term]
+id: NO:0000004
+name: Vigor
+def: "Subjective rating of plant vigor, based on the range of vigor present in the field at the time of rating (1 = least vigorous plant in the nursery, 9 = most vigorous); photos of a 1, 5, and 9 plant taken at the time of rating to callibrate scale" []
+is_a: NO:0000001 ! Agronomical Traits
+
+[Term]
+id: NO:0000005
+name: Spring stand
+def: "% of stand present, recorded after risk of frost has passed" []
+is_a: NO:0000001 ! Agronomical Traits
+
+[Term]
+id: NO:0000006
+name: Growth stage
+def: "Kalu & Fick scale: 0 = early vegetative; 1 = mid-vegetative; 2 = late vegetative, 3 = early bud, 4 = late bud, 5 = early flower, 6 = late flower, 7 = early seed pod, 8 = late seed pod, 9 = ripe seed pod" []
+is_a: NO:0000001 ! Agronomical Traits
+
+[Term]
+id: NO:0000007
+name: Variability
+def: "binary variable indicating uniformity (U) or variability (V) of plant vigor across plot" []
+is_a: NO:0000001 ! Agronomical Traits
+
+[Term]
+id: NO:0000008
+name: Seed yield
+def: "weight of seed harvested from a single plant in g" []
+is_a: NO:0000001 ! Agronomical Traits
+
+[Term]
+id: NO:0000009
+name: NCSU_ontology
+

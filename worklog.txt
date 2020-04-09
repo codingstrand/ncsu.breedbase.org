@@ -1,0 +1,11 @@
+
+2020-03-25
+
+Created ontology using Protege on Mac from spreadsheet provided by Virginia (1h)
+
+Loaded ontology into NCSU breedbase (1h)
+
+/home/production/cxgn/Chado/chado/bin/gmod_load_cvterms.pl -r postgres -p postgres -d Pg -D cxgn_ncsu -H breedbase_db -s NO  -u ~/ncsu_ontology.owl
+
+perl gmod_make_cvtermpath.pl -H breedbase_db -D cxgn_ncsu  -vt -c ncsu_ontology -d Pg -u postgres -p postgres
+
