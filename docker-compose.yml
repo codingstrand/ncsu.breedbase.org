@@ -36,10 +36,14 @@ services:
         target: /home/production/images
       - type: bind
         source: $HOME/ncsu.breedbase.org/covercropslogo_transparent.webp
-        target: /home/production/root/static/img/covercropslogo_transparent.webp
+        target: /home/production/cxgn/sgn/static/img/covercropslogo_transparent.webp
       - type: bind
         source: /home/production/ncsu.breedbase.org/crontab
         target: /etc/crontab
+      - type: bind
+        source: /home/production/ncsu.breedbase.org/covercrops
+        target: /home/production/cxgn/covercrops
+
 
   breedbase_db:
     image: breedbase/pg:latest

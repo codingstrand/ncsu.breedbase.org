@@ -1,7 +1,11 @@
 
 <a class="navbar-brand" href="/" style="padding:10px 0px">
 
-  <img id="sgnlogo" 
-src="/static/img/covercrops_transparent.webp" width="60" alt="MusaBase Home" title="Covercrops Home"></a>
+<span style="margin-left:15px">
+  <img id="sgnlogo" src="/static/img/covercropslogo_transparent.webp" width="100" alt="CoverCrops Home" title="Covercrops Home"></a>
+</span>
 
-<a class="navbar-brand sgn_brand_name" href="/">Covercrop Breeding</a>
+<span>
+  <a style="position:relative; left:-50px" class="navbar-brand sgn_brand_name" href="/">Covercrop Breeding</a>
+</span>
+

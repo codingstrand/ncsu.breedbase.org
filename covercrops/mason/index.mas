@@ -1,0 +1,18 @@
+
+<%args>
+$schema
+</%args>
+
+% my $dbh = $schema->storage->dbh();
+
+<center>
+
+<h2>Cover Crops Breeding Database</h2>
+
+<& /image/embed_image.mas, dbh=>$dbh, image_id=>2426 &>
+
+<div style="margin-top:30px">
+<a target="_new" href="https://www.covercropbreeding.com/">More on the cover crop breeding project...</a>
+</div>
+
+</center>
