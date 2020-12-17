@@ -8,40 +8,15 @@ name: Agronomical Traits
 is_a: NO:0000009 ! NCSU_ontology
 
 [Term]
-id: NO:0000002
-name: Dry biomass
-def: "weight of dried biomass harvested from a whole (or part of) a plot" []
-is_a: NO:0000001 ! Agronomical Traits
-relationship: variable_of NO:0000001 ! Agronomical Traits
-
-[Term]
-id: NO:0000003
-name: Emergence
-def: "% of stand present, recorded 1 and 2 months after planting" []
-is_a: NO:0000001 ! Agronomical Traits
-
-[Term]
-id: NO:0000004
-name: Vigor
-def: "Subjective rating of plant vigor, based on the range of vigor present in the field at the time of rating (1 = least vigorous plant in the nursery, 9 = most vigorous); photos of a 1, 5, and 9 plant taken at the time of rating to callibrate scale" []
-is_a: NO:0000001 ! Agronomical Traits
-
-[Term]
 id: NO:0000005
 name: Spring stand
 def: "% of stand present, recorded after risk of frost has passed" []
 is_a: NO:0000001 ! Agronomical Traits
 
 [Term]
-id: NO:0000006
-name: Growth stage
-def: "Kalu & Fick scale: 0 = early vegetative; 1 = mid-vegetative; 2 = late vegetative, 3 = early bud, 4 = late bud, 5 = early flower, 6 = late flower, 7 = early seed pod, 8 = late seed pod, 9 = ripe seed pod" []
-is_a: NO:0000001 ! Agronomical Traits
-
-[Term]
 id: NO:0000007
 name: Variability
-def: "binary variable indicating uniformity (U) or variability (V) of plant vigor across plot" []
+def: "binary variable indicating uniformity (U) or variability (V) of plant vigor across plot. Values: U or V. Crimson clover half-sib trial only." []
 is_a: NO:0000001 ! Agronomical Traits
 
 [Term]
@@ -53,4 +28,169 @@ is_a: NO:0000001 ! Agronomical Traits
 [Term]
 id: NO:0000009
 name: NCSU_ontology
+
+[Term]
+id: NO:0000011
+name: Freeze damage
+def: "0 = no damage, 1 = leaf border affected (resembles burnt paper), 2 = majority of leaf surface affected, 3 = partial damage to stem (upper third of plant), 4 = serious damage to stem (upper 3/4 of plant), 5 = damage to whole plant. Values: 0 to 5, NA if missing. Pea only." []
+is_a: NO:0000001 ! Agronomical Traits
+
+[Term]
+id: NO:0000012
+name: Regrowth ability
+def: "0 = plant still completely dead, 1 = plant is starting to produce new growth, 2 = around 50% of plant is new growth, 3 = the majority of plant is new growth and freeze damage is not visible anymore. Values: 0 to 3, NA if missing. Pea only." []
+is_a: NO:0000001 ! Agronomical Traits
+
+[Term]
+id: NO:0000013
+name: Disease
+def: "1 = no disease, 2 = some disease, 3 = severe disease. Values: 1 to 3, NA if missing. Clover & vetch" []
+is_a: NO:0000001 ! Agronomical Traits
+
+[Term]
+id: NO:0000014
+name: Disease incidence
+def: "% of the plot affected by disease. Values: % (0 to 100). Pea only." []
+is_a: NO:0000001 ! Agronomical Traits
+
+[Term]
+id: NO:0000015
+name: Disease severity
+def: "1 = no disesase, 9 = full plant diseased. Values: 1 to 9, NA if plant missing. Pea only." []
+is_a: NO:0000001 ! Agronomical Traits
+
+[Term]
+id: NO:0000016
+name: Indeterminacy
+def: "0 = uniform growth stage, 1 = intermediate, 2 = variable growth stage. Values: 0 to 2, NA if plant missing. Vetch only" []
+is_a: NO:0000001 ! Agronomical Traits
+
+[Term]
+id: NO:0000017
+name: Growth habit
+def: "1 = rosette/prostrate/horizontal growth, 2 = mixed, 3 = straight/vertical growth. Values: 1 to 3, NA if missing. Pea only." []
+is_a: NO:0000001 ! Agronomical Traits
+
+[Term]
+id: NO:0000018
+name: Leaf type
+def: "Categorical: Normal, Semi-leafless, Segregating. NA if missing. Pea only." []
+is_a: NO:0000001 ! Agronomical Traits
+
+[Term]
+id: NO:0000019
+name: Visual shatter
+def: "Mean of a subset of pods visually rated for shatter.  Each pod was rated as 0 = pod fully intact (no openings along sutures), 1 = one suture partially opened (one side of pod), 2 = two sutures partially opened (both sides of pod), and 3 = pod fully opened. Vetch only." []
+is_a: NO:0000001 ! Agronomical Traits
+
+[Term]
+id: NO:0000020
+name: Visual spiraling
+def: "Degree of spiraling rated by the tightness of the curls formed in the carpels. 0 = no curling of the carpels, 1 = intermediate curling, and 2 = very tight curling of the carpels. Vetch only." []
+is_a: NO:0000001 ! Agronomical Traits
+
+[Term]
+id: NO:0000021
+name: % hard seed
+def: "% of seed germinating after scarification, % 0-100" []
+is_a: NO:0000001 ! Agronomical Traits
+
+[Term]
+id: NO:0000022
+name: Seed color
+def: "Categorical: Yellow, Green, Brown, Segregating. Values: Yellow, Green, Brown, Segregating; NA if missing. Pea only." []
+is_a: NO:0000001 ! Agronomical Traits
+
+[Term]
+id: NO:0000023
+name: Stand count fall emergence 1
+def: "% of stand present. Values: % (0 to 100). Notes: We record this trait twice for each plant. Is there a good way in the system to name different \"instances\" of a trait, or do we need to create separate traits for each instance? We need to be able to differentiate between \"emergence 1\" and \"emergence 2\"" []
+is_a: NO:0000001 ! Agronomical Traits
+
+[Term]
+id: NO:0000024
+name: Stand count fall emergence 2
+def: "% of stand present. Values: % (0 to 100). Notes: We record this trait twice for each plant. Is there a good way in the system to name different \"instances\" of a trait, or do we need to create separate traits for each instance? We need to be able to differentiate between \"emergence 1\" and \"emergence 2\"" []
+is_a: NO:0000001 ! Agronomical Traits
+
+[Term]
+id: NO:0000025
+name: Stand count spring stand
+def: "% of stand present. Values: % (0 to 100). Notes: We record this trait twice for each plant. Is there a good way in the system to name different \"instances\" of a trait, or do we need to create separate traits for each instance? We need to be able to differentiate between \"emergence 1\" and \"emergence 2\"" []
+is_a: NO:0000001 ! Agronomical Traits
+
+[Term]
+id: NO:0000026
+name: Growth stage 50% flowering
+def: "Kalu & Fick scale: 0 = early vegetative; 1 = mid-vegetative; 2 = late vegetative, 3 = early bud, 4 = late bud, 5 = early flower, 6 = late flower, 7 = early seed pod, 8 = late seed pod, 9 = ripe seed pod" []
+is_a: NO:0000001 ! Agronomical Traits
+
+[Term]
+id: NO:0000027
+name: Growth stage 50% seed set
+def: "Kalu & Fick scale: 0 = early vegetative; 1 = mid-vegetative; 2 = late vegetative, 3 = early bud, 4 = late bud, 5 = early flower, 6 = late flower, 7 = early seed pod, 8 = late seed pod, 9 = ripe seed pod" []
+is_a: NO:0000001 ! Agronomical Traits
+
+[Term]
+id: NO:0000028
+name: Growth stage harvest 1
+def: "Kalu & Fick scale: 0 = early vegetative; 1 = mid-vegetative; 2 = late vegetative, 3 = early bud, 4 = late bud, 5 = early flower, 6 = late flower, 7 = early seed pod, 8 = late seed pod, 9 = ripe seed pod" []
+is_a: NO:0000001 ! Agronomical Traits
+
+[Term]
+id: NO:0000029
+name: Growth stage harvest 2
+def: "Kalu & Fick scale: 0 = early vegetative; 1 = mid-vegetative; 2 = late vegetative, 3 = early bud, 4 = late bud, 5 = early flower, 6 = late flower, 7 = early seed pod, 8 = late seed pod, 9 = ripe seed pod" []
+is_a: NO:0000001 ! Agronomical Traits
+
+[Term]
+id: NO:0000030
+name: Dry biomass full plot
+def: "weight of dried biomass harvested from a whole plot in g." []
+is_a: NO:0000001 ! Agronomical Traits
+relationship: variable_of NO:0000001 ! Agronomical Traits
+
+[Term]
+id: NO:0000031
+name: Dry biomass subsection 1
+def: "weight of dried biomass harvested from part of a plot in g." []
+is_a: NO:0000001 ! Agronomical Traits
+relationship: variable_of NO:0000001 ! Agronomical Traits
+
+[Term]
+id: NO:0000032
+name: Dry biomass subsection 2
+def: "weight of dried biomass harvested from a whole part of a plot in g." []
+is_a: NO:0000001 ! Agronomical Traits
+relationship: variable_of NO:0000001 ! Agronomical Traits
+
+[Term]
+id: NO:0000033
+name: Vigor fall 1
+def: "Subjective rating of plant vigor, based on the range of vigor present in the field at the time of rating (1 = least vigorous plant in the nursery, 9 = most vigorous); photos of a 1, 5, and 9 plant taken at the time of rating to callibrate scale. Values: 1 to 9, NA if plant missing." []
+is_a: NO:0000001 ! Agronomical Traits
+
+[Term]
+id: NO:0000034
+name: Vigor fall 2
+def: "Subjective rating of plant vigor, based on the range of vigor present in the field at the time of rating (1 = least vigorous plant in the nursery, 9 = most vigorous); photos of a 1, 5, and 9 plant taken at the time of rating to callibrate scale. Values: 1 to 9, NA if plant missing." []
+is_a: NO:0000001 ! Agronomical Traits
+
+[Term]
+id: NO:0000035
+name: Vigor spring 1
+def: "Subjective rating of plant vigor, based on the range of vigor present in the field at the time of rating (1 = least vigorous plant in the nursery, 9 = most vigorous); photos of a 1, 5, and 9 plant taken at the time of rating to callibrate scale. Values: 1 to 9, NA if plant missing." []
+is_a: NO:0000001 ! Agronomical Traits
+
+[Term]
+id: NO:0000036
+name: Vigor spring 2
+def: "Subjective rating of plant vigor, based on the range of vigor present in the field at the time of rating (1 = least vigorous plant in the nursery, 9 = most vigorous); photos of a 1, 5, and 9 plant taken at the time of rating to callibrate scale. Values: 1 to 9, NA if plant missing." []
+is_a: NO:0000001 ! Agronomical Traits
+
+[Term]
+id: NO:0000037
+name: Vigor spring 3
+def: "Subjective rating of plant vigor, based on the range of vigor present in the field at the time of rating (1 = least vigorous plant in the nursery, 9 = most vigorous); photos of a 1, 5, and 9 plant taken at the time of rating to callibrate scale. Values: 1 to 9, NA if plant missing." []
+is_a: NO:0000001 ! Agronomical Traits
 
