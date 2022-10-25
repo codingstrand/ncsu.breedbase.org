@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Firewall that will prevent port 8080 and 5432 to be accessible from the outside world
+
+iptables -I FORWARD -p tcp ! -i 0.0.0.0 --dport 8080 -j DROP # 8080 only accessible through localhost
+
+
