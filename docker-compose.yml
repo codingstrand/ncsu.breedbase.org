@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   breedbase:
-    image: breedbase/breedbase:v0.18
+    image: breedbase/breedbase:v0.55
     depends_on:
       - breedbase_db
     container_name: breedbase_web
@@ -33,7 +33,7 @@ services:
         target: /home/production/blast
       - type: bind
         source: $HOME/images
-        target: /home/production/images
+        target: /home/production/public/images
       - type: bind
         source: $HOME/ncsu.breedbase.org/covercropslogo_transparent.webp
         target: /home/production/cxgn/sgn/static/img/covercropslogo_transparent.webp
@@ -43,7 +43,9 @@ services:
       - type: bind
         source: /home/production/ncsu.breedbase.org/covercrops
         target: /home/production/cxgn/covercrops
-
+      - type: bind
+        source: /home/production/db_dumps
+        target: /db_dumps
 
   breedbase_db:
     image: breedbase/pg:latest
@@ -54,7 +56,4 @@ services:
       - type: bind
         source: /home/production/pgdata
         target: /var/lib/postgresql/data
-      - type: bind
-        source: /home/production/db_dumps
-        target: /db_dumps
 

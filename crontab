@@ -16,3 +16,6 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
 ### NCSU BREEDBASE SPECIFIC CRONTAB ENTRIES:
 ###
+30 00  * * *  root     /db_dumps/dump
+
+###* * * * *   root     date
