@@ -191,3 +191,9 @@ name: Vigor spring 3
 def: "Subjective rating of plant vigor, based on the range of vigor present in the field at the time of rating (1 = least vigorous plant in the nursery, 9 = most vigorous); photos of a 1, 5, and 9 plant taken at the time of rating to callibrate scale. Values: 1 to 9, NA if plant missing." []
 relationship: variable_of NO:0000001 ! Agronomical Traits
 
+[Term]
+id: NO:0000038
+name: Flowering date
+def: "Calendar date at which the plant is in full flower. Visit plots every 3 days after seeing the first flower in the nursery, and then at least weekly after 50% of plants have flowered." []
+relationship: variable_of NO:0000001 ! Agronomical Traits
+ 
