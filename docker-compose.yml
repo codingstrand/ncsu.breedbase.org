@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   breedbase:
-    image: breedbase/breedbase:v0.55
+    image: breedbase/breedbase:v0.56
     depends_on:
       - breedbase_db
     container_name: breedbase_web
@@ -31,6 +31,9 @@ services:
       - type: bind
         source: $HOME/blast
         target: /home/production/blast
+      - type: bind
+        source: $HOME/public
+        target: /home/production/public
       - type: bind
         source: $HOME/images
         target: /home/production/public/images
