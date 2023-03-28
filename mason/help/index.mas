@@ -1,0 +1,15 @@
+
+<%args>
+
+</%args>
+
+<& /page/page_title.mas, title => 'Covercrops Help' &>
+
+For help, please refer to the <a href="https://solgenomics.github.io">manual</a>.
+
+To cite Covercrops or the Breedbase system, please use:
+
+<div class="boxbgcolor1">
+Breedbase: a digital ecosystem for modern plant breeding (2022).
+Nicolas Morales, Alex C Ogbonna, Bryan J Ellerbrock, Guillaume J Bauchet, Titima Tantikanjana, Isaak Y Tecle, Adrian F Powell, David Lyon, Naama Menda, Christiano C Simoes, Surya Saha, Prashant Hosmani, Mirella Flores, Naftali Panitz, Ryan S Preble, Afolabi Agbona, Ismail Rabbi, Peter Kulakow, Prasad Peteti, Robert Kawuki, Williams Esuma, Micheal Kanaabi, Doreen M Chelangat, Ezenwanyi Uba, Adeyemi Olojede, Joseph Onyeka, Trushar Shah, Margaret Karanja, Chiedozie Egesi, Hale Tufan, Agre Paterne, Asrat Asfaw, Jean-Luc Jannink, Marnin Wolfe, Clay L Birkett, David J Waring, Jenna M Hershberger, Michael A Gore, Kelly R Robbins, Trevor Rife, Chaney Courtney, Jesse Poland, Elizabeth Arnaud, Marie-Angélique Laporte, Heneriko Kulembeka, Kasele Salum, Emmanuel Mrema, Allan Brown, Stanley Bayo, Brigitte Uwimana, Violet Akech, Craig Yencho, Bert de Boeck, Hugo Campos, Rony Swennen, Jeremy D Edwards, and Lukas A Mueller. 10.1093/g3journal/jkac078
+</div>
