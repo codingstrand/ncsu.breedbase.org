@@ -196,4 +196,22 @@ id: NO:0000038
 name: Flowering date
 def: "Calendar date at which the plant is in full flower. Visit plots every 3 days after seeing the first flower in the nursery, and then at least weekly after 50% of plants have flowered." []
 relationship: variable_of NO:0000001 ! Agronomical Traits
+
+[Term]
+id: NO:0000039
+name: Flowering date - First
+def: "Calendar date at which the first plant in the plot is flowering." []
+relationship: variable_of NO:0000001 ! Agronomical Traits
+
+[Term]
+id: NO:0000040
+name: Flowering date - 50%
+def: "Calendar date at which 50% of plants in the plot are flowering." []
+relationship: variable_of NO:0000001 ! Agronomical Traits
+
+[Term]
+id: NO:0000041
+name: Flowering date - Last
+def: "Calendar date at which the last plant in the plot is flowering." []
+relationship: variable_of NO:0000001 ! Agronomical Traits
  
